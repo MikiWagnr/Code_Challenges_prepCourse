@@ -16,14 +16,30 @@
 //What variables do we need?
 //miles ran and available candy.
 
-var milesRan = 0
-var givenCandy = 0
 
 
-    for (milesRan = 0; milesRan <= 6; milesRan++) {
-        if (milesRan % 2 === 0 && milesRan != 0 && milesRan != 6) {
-            givenCandy++
-        } else {
-            givenCandy = 0
-        } console.log(milesRan, givenCandy)
+// function candyRunner(miles){
+//     var givenCandy = 0
+//     for (var milesRan = 1; milesRan < miles; milesRan++) {
+//         if (milesRan % 2 === 0) {
+//             givenCandy++
+//         } else {
+//             givenCandy = 0
+//         }
+//         console.log(milesRan, givenCandy)
+//     }
+//     console.log(milesRan, givenCandy)
+// }
+// candyRunner(10)
+function candyRunner(miles) {
+    var givenCandy = 0
+    for (var milesRan = 2; milesRan < miles; milesRan += 2) {
+
+        givenCandy++
+
+        console.log(milesRan, givenCandy)
+
     }
+    console.log(milesRan, givenCandy)
+}
+candyRunner(10)
